@@ -36,3 +36,20 @@ for serial, name in enumerate(names):
     print(f"For {serial}-th name we got {name}")
 
 # ------------------------
+
+count = 5
+while count < 20:
+    print(count)
+    count += 5
+
+
+# ------------------------
+
+start_counting = 48
+while start_counting <= 59:
+    print(start_counting)
+    start_counting += 2
+
+
+# ------------------------
+
