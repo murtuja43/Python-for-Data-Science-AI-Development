@@ -28,3 +28,11 @@ for index, fruit in enumerate(fruits):
 
 
 # ------------------------
+
+
+
+names = ["", "Raihan", "Saif", "Safi", "Mursalin", "Jim", "Asif", "Musa"]
+for serial, name in enumerate(names):
+    print(f"For {serial}-th name we got {name}")
+
+# ------------------------
