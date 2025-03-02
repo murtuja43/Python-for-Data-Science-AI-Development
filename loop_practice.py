@@ -53,3 +53,11 @@ while start_counting <= 59:
 
 # ------------------------
 
+start_counting = 48
+while start_counting <= 59:
+    start_counting += 2
+    print(start_counting)
+
+
+# ------------------------
+
