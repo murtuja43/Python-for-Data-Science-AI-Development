@@ -64,3 +64,8 @@ sum(4, 2)
 
 # ------------------------
 
+def loop_test(starting):
+    for i in range(2, starting+1):
+        print(i)
+
+loop_test(8)
