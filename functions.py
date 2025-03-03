@@ -62,10 +62,18 @@ def sum(a, b):
 
 sum(4, 2)
 
+
 # ------------------------
 
-def loop_test(starting):
-    for i in range(2, starting+1):
+
+def loop_test(ending):
+    for i in range(2, ending+1):
         print(i)
 
 loop_test(8)
+
+
+# ------------------------
+
+
+# ------------------------
