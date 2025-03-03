@@ -31,12 +31,36 @@ print(max(a), min(a), sum(a))
 
 # ------------------------
 
+
 def greet(name):
-    greetings = ("Hello " + name)
+    '''this function says hello to a user after they input their name when asked'''
+    greetings = (f"Hello {name}!")
     return greetings
 
 greet_them = greet(input("Your name: "))
 print(greet_them)
 
 
+# ------------------------
+
+
+def multiply(a, b):
+    """
+    This function multiplies two numbers.
+    Input: a (number), b (number)
+    Output: Product of a and b
+    """
+    print(a * b)
+multiply(2,6)               # we don't have to type print to print a defined funciton
+
+# ------------------------
+
+
+def sum(a, b):
+    print(a + b)
+    return a + b
+
+sum(4, 2)
+
+# ------------------------
 
