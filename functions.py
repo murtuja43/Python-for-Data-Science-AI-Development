@@ -116,3 +116,28 @@ print(my_list)
 
 
 # ------------------------
+
+scores = []
+
+def add_scores(scores, addremove_the_score):
+    scores.append(addremove_the_score)
+
+
+def remove_scores(scores, addremove_the_score):
+    if addremove_the_score in scores:
+        scores.remove(addremove_the_score)
+    else:
+        print(f"The score {addremove_the_score} that you want to remove is not in the score list")
+
+add_scores(scores, 43)
+add_scores(scores, 48)
+add_scores(scores, 41)
+remove_scores(scores, 40)
+
+print(scores)
+
+
+# ------------------------
+
+
+# ------------------------
