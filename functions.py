@@ -87,4 +87,29 @@ for _ in range(3):
 
 
 
+# ------------------------Here we used a blank list and two funcitons and letter on we used the functions to add and remove elements from the list
+
+my_list = []
+
+def add_elements(list_name, element):
+    list_name.append(element)
+    return list_name
+
+def remove_elements(list_name, element):
+    list_name.remove(element)
+    return list_name
+
+add_elements(my_list, 43)
+add_elements(my_list, 1)
+add_elements(my_list, 4)
+add_elements(my_list, 41)
+remove_elements(my_list, 41)
+
+print(my_list)
+
+
+# ------------------------
+
+
+
 # ------------------------
