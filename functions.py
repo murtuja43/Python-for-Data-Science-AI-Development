@@ -76,4 +76,15 @@ loop_test(8)
 # ------------------------
 
 
+def greet(name):
+    return (f"Hello, {name}")
+
+for _ in range(3):
+    print(greet("Alice"))
+
+
+# ------------------------
+
+
+
 # ------------------------
