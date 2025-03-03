@@ -93,17 +93,20 @@ my_list = []
 
 def add_elements(list_name, element):
     list_name.append(element)
-    return list_name
 
 def remove_elements(list_name, element):
-    list_name.remove(element)
-    return list_name
+    if element in list_name:
+        list_name.remove(element)
+    else:
+        print("The element is not in the list")
+
 
 add_elements(my_list, 43)
 add_elements(my_list, 1)
 add_elements(my_list, 4)
 add_elements(my_list, 41)
 remove_elements(my_list, 41)
+remove_elements(my_list, 49)
 
 print(my_list)
 
