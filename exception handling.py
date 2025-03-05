@@ -81,4 +81,17 @@ def safe_divide(numerator, denominator):
 
 numerator = int(input("Enter numerator number: "))
 denominator = int(input("Enter denominator number: "))
+
 print(safe_divide(numerator,denominator))
+
+
+# another one
+import math
+def sq_root(number1):
+    try:
+        result = math.sqrt(number1)
+        print("Result: ", result)
+    except ValueError:
+        print("Enter a valid integer or float number")
+number1 = float(input("Enter an integer or a float number: "))
+print(sq_root(number1))
