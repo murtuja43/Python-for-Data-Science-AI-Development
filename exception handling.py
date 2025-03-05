@@ -35,3 +35,35 @@ except ValueError:
     print("You did not provide a number")
 except:
     print("Something went wrong")
+
+
+# using else:
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+except ZeroDivisionError:
+    print("The number you provided cant divide 1 because it is 0")
+except ValueError:
+    print("You did not provide a number")
+except:
+    print("Something went wrong")
+else:
+    print("success a=",a)
+
+
+# using 'finally' to inform the process is complete
+a = 5
+
+try:
+    c = int(input("Enter a number: "))
+    b = a / c
+except ZeroDivisionError:
+    print("Can't divide by 0")
+except ValueError:
+    print("Enter a number only: ")
+else:
+    print("Success, c = ", c)
+finally:
+    print("Processing Complete")
