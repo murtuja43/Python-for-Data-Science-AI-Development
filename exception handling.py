@@ -67,3 +67,18 @@ else:
     print("Success, c = ", c)
 finally:
     print("Processing Complete")
+
+
+
+# another one
+def safe_divide(numerator, denominator):
+    try:
+        result = numerator / denominator
+        return result
+    except ZeroDivisionError:
+        print("Can't divide by 0")
+        return None
+
+numerator = int(input("Enter numerator number: "))
+denominator = int(input("Enter denominator number: "))
+print(safe_divide(numerator,denominator))
