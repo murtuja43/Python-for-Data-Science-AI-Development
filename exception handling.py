@@ -95,3 +95,15 @@ def sq_root(number1):
         print("Enter a valid integer or float number")
 number1 = float(input("Enter an integer or a float number: "))
 print(sq_root(number1))
+
+
+
+# another one
+def complex_math(num):
+    try:
+        result = num / (num - 5)
+        print(result)
+    except Exception as e:
+        print("An error occured")
+user_input = float(input("Enter a number: "))
+complex_math(user_input)
