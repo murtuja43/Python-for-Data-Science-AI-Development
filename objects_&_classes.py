@@ -50,3 +50,18 @@ class Car():
 
 c1 = Car("Red", 230, 4000)
 c1.intro_of_car()
+
+
+# ------------------------------
+
+
+class Cat():
+    def __init__(self, eye, legs):
+        self.eye = eye
+        self.legs = legs
+    
+    def intro_of_the_cat(self):
+        print(f"The cat has {self.eye} eyes and it has {self.legs} legs. Right?")
+
+cat1 = Cat(input("Enter cat's eye color: "), input("Enter cat's legs (how many): "))
+cat1.intro_of_the_cat()
