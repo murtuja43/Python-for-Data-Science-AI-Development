@@ -36,3 +36,17 @@ r2 = Robot("Jerry", 1, "Orange", 1)
 
 r1.introduce_self()
 r2.introduce_self()
+
+# --------------------------
+
+class Car():
+    def __init__(self, color, speed, weight):
+        self.color = color
+        self.speed = speed
+        self.weight = weight
+
+    def intro_of_car(self):
+        print(f"The color of the car is {self.color}. Top speed {self.speed}, weight {self.weight}")
+
+c1 = Car("Red", 230, 4000)
+c1.intro_of_car()
