@@ -107,4 +107,28 @@ class Vehicle():
 car1 = Vehicle(300, 45)
 car1.all_properties()
 
+# ----------------------------------
+
+class Vehicle():
+    color = "White"
+    def __init__(self, max_speed, max_mileage):
+        self.max_speed = max_speed
+        self.max_mileage = max_mileage
+        self.sitting_capacity = 2
+
+    def assigning_seat_capacity(self, sitting_capacity):
+        self.sitting_capacity = sitting_capacity
+
+    def all_properties(self):
+        print(f"The max speed of the car is {self.max_speed}")
+        print(f"The max mileage of the car is {self.max_mileage}")
+        print(f"The seating capacity of the car is {self.sitting_capacity}")
+
+car1 = Vehicle(200, 20)
+car1.assigning_seat_capacity(5)
+car1.all_properties()
+
+car2 = Vehicle(180, 25)
+car2.assigning_seat_capacity(4)
+car2.all_properties()
 
