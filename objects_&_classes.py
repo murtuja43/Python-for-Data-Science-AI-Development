@@ -1,13 +1,12 @@
-class Car:
-    speed = 50
+class Robot:
+    def introduce_self(self):
+        print("My name is ", self.name)
+        print(f"I am {self.age} years old")
 
-    def __init__(self, speed, start_seconds):
-        self.speed = 50
-        self.start_seconds = 5
+r1 = Robot()
+r1.name = "Tom"
+r1.age = 3
+r1.color = "red"
+r1.weight = 10
 
-    def method1(self, parameter1, parameter2):
-        pass
-    
-    def method2(self, parameter1, parameter2):
-        pass
-
+r1.introduce_self()
