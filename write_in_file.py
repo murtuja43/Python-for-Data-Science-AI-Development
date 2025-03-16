@@ -31,10 +31,10 @@ with open("new_file3.txt", "a") as append_file:
 
 
 # add dictionary in the append file
-new_data_dict = ["This is line 9 \n", "This is line 10 \n", "This is line 11 \n"]
+new_data_dict = ["This is line 9", "This is line 10", "This is line 11"]
 with open("new_file3.txt", "a") as append_file:
     for line in new_data_dict:
-        append_file.write(line)
+        append_file.write(line + "\n")
 
 
 
